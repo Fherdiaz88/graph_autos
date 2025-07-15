@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Auto {
+  id: Int!
+  marca: String!
+  potencia: Int!
+}
+
+type Query {
+  autos: [Auto!]!
+  auto(id: Int!): Auto!
+}
+
+type Mutation {
+  createAuto(createAutoInput: CreateAutoInput!): Auto!
+}
+
+input CreateAutoInput {
+  marca: String!
+  potencia: Int!
+}
